@@ -31,3 +31,7 @@ nav img{
     display: flex;
     gap: 40px;
 }
+
+section img{
+    width: 100%;
+}
