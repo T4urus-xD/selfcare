@@ -35,3 +35,44 @@ nav img{
 section img{
     width: 100%;
 }
+
+
+
+main #main-header{
+    border-bottom: 0.2px solid #A5A1A1;
+    margin-bottom: 57px;
+}
+
+main #main-header #main-header--content{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+    padding: 0 70px;
+}
+
+main #main-cards{
+    display: flex;
+    padding: 0 70px;
+    gap: 195px;
+    flex-wrap: wrap;
+}
+
+main .main-card .main-card--img{
+    width: 303px;
+    height: 303px;
+}
+
+main img{
+    width: 100%;
+    object-fit: cover;
+}
+
+main .main-card div{
+    display: flex;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+main .main-card .main-card--price{
+    color: green;
+}
