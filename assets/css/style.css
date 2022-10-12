@@ -1,0 +1,33 @@
+* {
+    margin: 0
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 70px;
+
+}
+nav div{
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+
+nav div p{
+    font-size: 26px;
+    font-weight: 500;
+    
+}
+nav img{
+    width: 20px;
+    height: 20px;
+}
+
+#font-brand{
+    font-family: 'Cabin', sans-serif;
+}
+#nav-options{
+    display: flex;
+    gap: 40px;
+}
