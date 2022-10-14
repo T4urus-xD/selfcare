@@ -80,6 +80,18 @@ main .main-card .main-card--price{
 
 #footer-top{
     display: flex;
-    align-items: center;
+    justify-content: space-between;
     padding: 40px 70px;
+}
+
+#footer-top--div-newsletter{
+    display: flex;
+    gap: 40px;
+    gap: auto;
+}
+
+#div-footer-top--box{
+    width: 10px;
+    height: 10 px;
+
 }
