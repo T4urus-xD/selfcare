@@ -1,14 +1,4 @@
-h1 {color: blue;
-    font-size: 20px;
-}
-a{
-    color:green;
-
-}
-img {
-    width: 500px;
-}
-li {
-    font-weight: bold;
-    color: blueviolet;
+.example{
+    border: 1px solid green;
+    margin: 10px;
 }
