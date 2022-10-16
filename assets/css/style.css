@@ -1,5 +1,8 @@
 * {
-    margin: 0
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
 }
 
 nav {
@@ -16,9 +19,9 @@ nav div{
 
 nav div p{
     font-size: 26px;
-    font-weight: 500;
-    
+    font-weight: 500;   
 }
+
 nav img{
     width: 20px;
     height: 20px;
@@ -35,8 +38,6 @@ nav img{
 section img{
     width: 100%;
 }
-
-
 
 main #main-header{
     border-bottom: 0.2px solid #A5A1A1;
@@ -56,6 +57,7 @@ main #main-cards{
     gap: 190px;
     row-gap: 60px;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 main .main-card .main-card--img{
@@ -72,26 +74,190 @@ main .main-card div{
     display: flex;
     gap: 5px;
     margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 600;
 }
 
 main .main-card .main-card--price{
-    color: green;
+    color: #5CA720;
+    font-size: 25px;
+    font-weight: 700px;
+    align-items: center;
 }
 
-#footer-top{
+footer{ 
+    margin-top: 115px;
+    background-color: #f9f9f9;
+    color: #161616;
+    font-size: 20px;
+    font-weight: 600px;
+}
+
+footer a, 
+footer a:visited{
+    text-decoration: none;
+    color: #161616;
+}
+
+footer ul li{
+    margin-bottom: 10px;
+}
+
+footer ul {
+    list-style: none;
+
+}
+
+.footer-header{
+    border-bottom: 0.2px solid #A5A1A1;
+    
+}
+.footer-header--content{
     display: flex;
     justify-content: space-between;
     padding: 40px 70px;
+    
 }
 
-#footer-top--div-newsletter{
+.footer-newsletter{
+    margin-bottom: 18px;
+}
+
+.footer-newsletter .footer-newsletter--input{
     display: flex;
-    gap: 40px;
-    gap: auto;
 }
 
-#div-footer-top--box{
-    width: 10px;
-    height: 10 px;
+.footer-newsletter .footer-newsletter--input a{
+    color: #fff;
+    background-color: #5CA720;
+    padding: 15px 34px;
 
+}
+
+.footer-newsletter .footer-newsletter--input input{
+    padding: 15px 170px 15px 13px;
+}
+
+.footer-extra{
+    padding: 50px 70px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-extra--social{
+    color: #5CA720;
+    display: flex;
+    gap: 20px;
+
+}
+
+.footer-extra--cards-imgs{
+    display: flex;
+    gap: 5px
+}
+
+.footer-extra--cards-imgs img{
+    width: 40px;
+    height: 35px;
+}
+
+.footer-extra--cards-imgs-box{
+    width: 33px;
+    height: 45px;
+}
+
+.footer-extra--cards-imgs-box img{
+    width: 100%;
+    object-fit: contain;
+}
+
+@media (min-width:768px) and (max-width: 935px){
+    main .main-card .main-card--img {
+        max-width: 300px;
+        max-height: 310px;
+    }
+}
+
+@media (max-width: 425px){
+    main .main-card .main-card--img {
+        width: 126px;
+        height: 126px;
+    }
+    nav {
+        padding: 35px 33px; 
+    }
+    main #main-header #main-header--content{
+        padding: 35px 33px;
+    }
+    main #main-cards{
+        padding: 35px 33px;
+    }
+    .footer-header--content{
+        display: block;
+        padding: 35px 33px;      
+    }
+    .footer-newsletter{
+        margin-top: 54px;
+    } 
+    .footer-newsletter p{
+        margin-top: 54px;
+        margin-bottom: 17px;
+    }
+    .footer-newsletter .footer-newsletter--input {
+        display:flex;
+        flex-direction: column;
+    }
+    .footer-newsletter .footer-newsletter--input a{
+        padding: 12px 135px;
+    }
+    .footer-newsletter .footer-newsletter--input input{
+        padding: 12px 165px 12px 10px;
+        margin-bottom: 17px;
+    }
+    .footer-extra{
+        padding: 35px 33px;
+    }
+    nav div p{
+        font-size: 18px;
+        font-weight: 500;   
+    }
+    main .main-card div{
+        font-size: 12px;
+        font-weight: 500;
+    }
+    main .main-card .main-card--price{
+        font-size: 14px;
+        font-weight: 700;
+    }
+    .main-card h5{
+        font-size: 12px;
+        font-weight: 600;
+    }
+    main #main-cards{
+        gap: 90px;
+    }
+}
+
+@media (max-width: 375px){
+    main #main-cards{
+        justify-content: center;
+        gap:50px;
+    }
+    
+    main .main-card .main-card--img{
+        width: 303px;
+        height: 303px;
+    }
+    main img{
+        width: 100%;
+        object-fit: cover;
+    }
+    .footer-newsletter .footer-newsletter--input{
+        align-items: center;
+    }
+    .footer-extra{
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }  
 }
