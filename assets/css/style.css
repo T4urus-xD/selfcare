@@ -176,12 +176,52 @@ footer ul {
         max-width: 300px;
         max-height: 310px;
     }
+    main #main-cards{
+        gap:0px;
+    }
 }
+@media (min-width: 533px) and (max-width: 767px){
+    main .main-card .main-card--img {
+        max-width: 180px;
+        max-height: 200px;
+    }
+    main #main-cards{
+        gap: 50px;
+    }
+    main .main-card div{
+        font-size: 12px;
+        font-weight: 600;
+    }
+    main .main-card h4{
+        font-size: 14px;
+    }
+    main .main-card .main-card--price {
+        font-size: 14px;
+    }
+    .footer-header--content{
+        display: block;
+    }
+    .footer-newsletter .footer-newsletter--input {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer-newsletter .footer-newsletter--input a{
+        padding: 12px 45%;
+    }
+    .footer-newsletter .footer-newsletter--input input{
+        padding: 12px 200px 12px 10px;
+        min-width: 100%;
+        margin-bottom: 17px;
+    }
+}   
+
 
 @media (max-width: 425px){
     main .main-card .main-card--img {
-        width: 126px;
-        height: 126px;
+        max-width: 126px;
+        max-height: 126px;
     }
     nav {
         padding: 35px 33px; 
@@ -191,6 +231,8 @@ footer ul {
     }
     main #main-cards{
         padding: 35px 33px;
+        display: flex;
+        flex-wrap: wrap;
     }
     .footer-header--content{
         display: block;
@@ -242,19 +284,26 @@ footer ul {
     main #main-cards{
         justify-content: center;
         gap:50px;
+        flex-wrap: wrap;
     }
     
     main .main-card .main-card--img{
-        width: 303px;
-        height: 303px;
+        min-width: 303px;
+        min-height: 303px;
     }
     main img{
         width: 100%;
+
         object-fit: cover;
     }
     .footer-newsletter .footer-newsletter--input{
         align-items: center;
+        padding: 0;    
     }
+    .footer-newsletter .footer-newsletter--input a{
+        padding: 12px 100%;
+    }
+
     .footer-extra{
         flex-direction: column;
         align-items: center;
