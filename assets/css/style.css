@@ -6,3 +6,10 @@ body{
     margin: 50px;
     font-size: 17px;
 }
+
+p{
+    color: blue;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: serif;
+}
